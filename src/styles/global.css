@@ -1,10 +1,70 @@
 @layer theme, base, components, utilities;
-@import "tailwindcss/theme.css" layer(theme);
-@import "tailwindcss/preflight.css" layer(base);
-@import "tailwindcss/utilities.css" layer(utilities);
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Arimo";
+    src: url("/fonts/Arimo/Arimo-Italic-VariableFont_wght.woff2") format("woff2");
+    font-style: italic;
+    font-weight: 1 1000;
+}
+
+@font-face {
+    font-family: "Arimo";
+    src: url("/fonts/Arimo/Arimo-VariableFont_wght.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 1 1000;
+}
+
+@font-face {
+    font-family: "Parisienne";
+    src: url("/fonts/Parisienne/Parisienne-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Red Hat Text";
+    src: url("/fonts/Red_Hat_Text/RedHatText-Italic-VariableFont_wght.woff2") format("woff2");
+    font-style: italic;
+    font-weight: 1 1000;
+}
+
+@font-face {
+    font-family: "Red Hat Text";
+    src: url("/fonts/Red_Hat_Text/RedHatText-VariableFont_wght.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 1 1000;
+}
+
+@layer theme {
+    :root {
+        --color-primary: rgb(0, 0, 0);
+        --color-secondary: rgb(0, 0, 0);
+        --color-accent: rgb(0, 0, 0);
+        --color-neutral: rgb(0, 0, 0);
+
+        --font-arimo: "Arimo", sans-serif;
+        --font-parisienne: "Parisienne", cursive;
+        --font-red-hat-text: "Red Hat Text", sans-serif;
+    }
+}
 
 @layer base {
     body {
-        @apply bg-gray-300
+        @apply bg-gray-300;
+    }
+}
+
+@layer utilities {
+    .font-arimo {
+        font-family: "Arimo", sans-serif;
+    }
+
+    .font-parisienne {
+        font-family: "Parisienne", cursive;
+    }
+
+    .font-red-hat-text {
+        font-family: "Red Hat Text", sans-serif;
     }
 }

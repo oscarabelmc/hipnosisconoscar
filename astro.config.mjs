@@ -7,16 +7,20 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  server: {
-      allowedHosts: ['hipnosisconoscar.com', 'zorro12.local'],
-  },
-
-  vite: {
-    plugins: [tailwindcss()],
-    resolve: {
-      alias: {
-        '@': path.resolve(fileURLToPath(import.meta.url), '../src'),
-      },
+    i18n: {
+        locales: ["es", "en"],
+        defaultLocale: "es",
     },
-  },
+    server: {
+        allowedHosts: ['hipnosisconoscar.com', 'zorro12.local'],
+    },
+
+    vite: {
+        plugins: [tailwindcss()],
+        resolve: {
+            alias: {
+                '@': path.resolve(fileURLToPath(import.meta.url), '../src'),
+            },
+        },
+    },
 });
