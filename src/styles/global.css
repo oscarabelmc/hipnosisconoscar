@@ -74,7 +74,7 @@
     }
 
     button {
-        @apply bg-primary-dark text-white font-arvo py-3 px-6 rounded-md hover:bg-primary transition-all ease-in-out duration-100;
+        @apply bg-primary-dark text-white font-arvo py-3 px-6 rounded-full hover:bg-primary transition-all ease-in-out duration-100;
     }
 }
 
