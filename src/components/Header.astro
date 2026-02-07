@@ -1,0 +1,37 @@
+<header>
+    <div id="header-overlay" class="bg-black opacity-0 fixed top-0 left-0 right-0 z-10 h-24 transition-opacity duration-300"></div>
+    <div class="fixed top-0 left-0 right-0 z-11">
+        <div class="mx-auto max-w-6xl px-4 flex justify-between">
+            <figure class="max-w-55">
+                <img src="/images/main-logo.webp" alt="Oscar Abel Mascareno Cervantes" class="w-full" />
+            </figure>
+            <nav class="px-4 py-7">
+                <a href="#" class=" inline-block max-w-12 p-1">
+                    <img src="/svgs/menu-icon.svg" alt="Menu Icon" class="w-full" />
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <script>
+        const handleScroll = () => {
+            const overlay = document.getElementById('header-overlay');
+            if (!overlay) return;
+            
+            const scrollPosition = window.scrollY;
+            const viewportHeight = window.innerHeight;
+            const scrollThreshold = viewportHeight * 0.3;
+            
+            if (scrollPosition >= scrollThreshold) {
+                overlay.classList.remove('opacity-0');
+                overlay.classList.add('opacity-40');
+            } else {
+                overlay.classList.remove('opacity-40');
+                overlay.classList.add('opacity-0');
+            }
+        };
+        
+        window.addEventListener('load', handleScroll);
+        window.addEventListener('scroll', handleScroll);
+    </script>
+</header>
