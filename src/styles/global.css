@@ -51,7 +51,7 @@
 
 @layer base {
     body {
-        @apply bg-gray-50 text-gray-800 text-xl;
+        @apply bg-white text-gray-800 text-xl;
         font-family: var(--font-red-hat-text);
     }
 
