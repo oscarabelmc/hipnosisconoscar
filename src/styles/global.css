@@ -55,6 +55,11 @@
         font-family: var(--font-red-hat-text);
     }
 
+    h1 {
+        @apply text-5xl;
+        font-family: var(--font-arvo);
+    }
+
     h2 {
         @apply text-3xl;
         font-family: var(--font-arvo);
@@ -62,7 +67,7 @@
 
     h3 {
         @apply text-2xl;
-        font-family: var(--font-arimo);
+        font-family: var(--font-arvo);
     }
 
     p {
