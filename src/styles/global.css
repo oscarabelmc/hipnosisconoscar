@@ -23,17 +23,17 @@
 }
 
 @font-face {
-    font-family: "Red Hat Text";
-    src: url("/fonts/Red_Hat_Text/RedHatText-Italic-VariableFont_wght.woff2") format("woff2");
-    font-style: italic;
-    font-weight: 1 1000;
+    font-family: "Arvo";
+    src: url("/fonts/Arvo/Arvo-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Red Hat Text";
-    src: url("/fonts/Red_Hat_Text/RedHatText-VariableFont_wght.woff2") format("woff2");
-    font-style: normal;
-    font-weight: 1 1000;
+    font-family: "Arvo";
+    src: url("/fonts/Arvo/Arvo-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: bold;
 }
 
 @layer theme {
@@ -44,14 +44,29 @@
         --color-neutral: rgb(0, 0, 0);
 
         --font-arimo: "Arimo", sans-serif;
+        --font-arvo: "Arvo", serif;
         --font-parisienne: "Parisienne", cursive;
-        --font-red-hat-text: "Red Hat Text", sans-serif;
     }
 }
 
 @layer base {
     body {
-        @apply bg-gray-300;
+        @apply bg-gray-50 text-gray-800 text-xl;
+        font-family: var(--font-red-hat-text);
+    }
+
+    h2 {
+        @apply text-3xl font-bold;
+        font-family: var(--font-arimo);
+    }
+
+    h3 {
+        @apply text-2xl font-bold;
+        font-family: var(--font-arimo);
+    }
+
+    p {
+        line-height: 1.5;
     }
 }
 
@@ -64,7 +79,8 @@
         font-family: "Parisienne", cursive;
     }
 
-    .font-red-hat-text {
-        font-family: "Red Hat Text", sans-serif;
+    .font-arvo {
+        font-family: "Arvo", cursive;
     }
+
 }

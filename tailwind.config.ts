@@ -5,11 +5,9 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Red Hat Text', 'system-ui', 'sans-serif'],
-                serif: ['Parisienne', 'Georgia', 'serif'],
+                arvo: ['Arvo', 'Georgia', 'serif'],
                 arimo: ['Arimo', 'sans-serif'],
-                parisienne: ['Parisienne', 'cursive'],
-                'red-hat-text': ['Red Hat Text', 'sans-serif'],
+                parisienne: ['Parisienne', 'cursive']
             },
         },
     },
