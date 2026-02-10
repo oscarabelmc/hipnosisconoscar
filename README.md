@@ -1,16 +1,55 @@
-# hipnosisconoscar
+# Hipnosisconoscar.com
 
-# Astro Starter Kit: Basics
+This is the main website for [hipnosisconoscar.com](https://hipnosisconoscar.com/).
 
-```sh
-bun create astro@latest -- --template basics
+## Requirements
+
+- [Nodejs](https://nodejs.org/en)
+- [Bun](https://bun.com/)
+- [Git LFS](https://git-lfs.com/)
+
+## Starting the proyect
+
+Clone the proyect via SSH.
+
+```bash
+git clone git@github.com:oscarabelmc/hipnosisconoscar.git
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Get the LFS files.
 
-## 🚀 Project Structure
+```bash
+git lfs pull
+```
 
-Inside of your Astro project, you'll see the following folders and files:
+Install the dependencies.
+
+```bash
+bun install
+```
+
+Run the proyect locally.
+
+```bash
+bun dev
+```
+
+On the browser go to [localhost:4321](http://localhost:4321)
+
+## Another Usefull Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command               | Action                                           |
+| :-------------------- | :----------------------------------------------- |
+| `bun install`         | Installs dependencies                            |
+| `bun dev`             | Starts local dev server at `localhost:4321`      |
+| `bun build`           | Build your production site to `./dist/`          |
+| `bun preview`         | Preview your build locally, before deploying     |
+| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `bun astro -- --help` | Get help using the Astro CLI                     |
+
+## Proyect Structure
 
 ```text
 /
@@ -27,22 +66,3 @@ Inside of your Astro project, you'll see the following folders and files:
 │       └── index.astro
 └── package.json
 ```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
-| `bun dev`             | Starts local dev server at `localhost:4321`      |
-| `bun build`           | Build your production site to `./dist/`          |
-| `bun preview`         | Preview your build locally, before deploying     |
-| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
