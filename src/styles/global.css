@@ -3,7 +3,6 @@
 /* ==========================================================================
    Fonts
    ========================================================================== */
-
 @font-face {
     font-family: 'Arimo';
     src: url('/fonts/Arimo/Arimo-Italic-VariableFont_wght.woff2') format('woff2');
@@ -29,18 +28,26 @@
 }
 
 @font-face {
-    font-family: 'Arvo';
-    src: url('/fonts/Arvo/Arvo-Regular.woff') format('woff');
+    font-family: 'Spectral';
+    src: url('/fonts/Spectral/Spectral-Light.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('/fonts/Spectral/Spectral-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Arvo';
-    src: url('/fonts/Arvo/Arvo-Bold.woff') format('woff');
+    font-family: 'Spectral';
+    src: url('/fonts/Spectral/Spectral-Bold.woff2') format('woff2');
     font-weight: 700;
-    font-style: normal;
+    font-style: bold;
     font-display: swap;
 }
 
@@ -100,7 +107,7 @@
     --font-sans:
         'Arimo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
         Arial, sans-serif;
-    --font-serif: 'Arvo', Georgia, 'Times New Roman', serif;
+    --font-serif: 'Spectral', Georgia, 'Times New Roman', serif;
     --font-cursive: 'Parisienne', cursive;
 
     /* ----------------------------------------------------------------------
@@ -199,7 +206,7 @@
     h4,
     h5,
     h6 {
-        @apply font-serif font-bold text-foreground;
+        @apply font-serif text-secondary;
     }
 
     h1 {
