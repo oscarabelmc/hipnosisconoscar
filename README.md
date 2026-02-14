@@ -4,7 +4,6 @@ This is the main website for [hipnosisconoscar.com](https://hipnosisconoscar.com
 
 ## Requirements
 
-- [Nodejs](https://nodejs.org/en)
 - [Bun](https://bun.com/)
 - [Git LFS](https://git-lfs.com/)
 
