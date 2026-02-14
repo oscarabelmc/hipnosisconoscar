@@ -11,6 +11,8 @@
         "build": "astro build",
         "preview": "astro preview",
         "astro": "astro"
-    },
-    "type": "module"
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prettier": "^3.8.1",
+    "prettier-plugin-astro": "^0.14.1",
 }
