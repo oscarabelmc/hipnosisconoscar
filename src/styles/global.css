@@ -1,37 +1,37 @@
 @layer theme, base, components, utilities;
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @font-face {
-    font-family: "Arimo";
-    src: url("/fonts/Arimo/Arimo-Italic-VariableFont_wght.woff2") format("woff2");
+    font-family: 'Arimo';
+    src: url('/fonts/Arimo/Arimo-Italic-VariableFont_wght.woff2') format('woff2');
     font-style: italic;
     font-weight: 1 1000;
 }
 
 @font-face {
-    font-family: "Arimo";
-    src: url("/fonts/Arimo/Arimo-VariableFont_wght.woff2") format("woff2");
+    font-family: 'Arimo';
+    src: url('/fonts/Arimo/Arimo-VariableFont_wght.woff2') format('woff2');
     font-style: normal;
     font-weight: 1 1000;
 }
 
 @font-face {
-    font-family: "Parisienne";
-    src: url("/fonts/Parisienne/Parisienne-Regular.woff2") format("woff2");
+    font-family: 'Parisienne';
+    src: url('/fonts/Parisienne/Parisienne-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Arvo";
-    src: url("/fonts/Arvo/Arvo-Regular.woff") format("woff");
+    font-family: 'Arvo';
+    src: url('/fonts/Arvo/Arvo-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Arvo";
-    src: url("/fonts/Arvo/Arvo-Bold.woff") format("woff");
+    font-family: 'Arvo';
+    src: url('/fonts/Arvo/Arvo-Bold.woff') format('woff');
     font-weight: 700;
     font-style: bold;
 }
@@ -43,9 +43,9 @@
     --color-accent: rgb(0, 0, 0);
     --color-neutral: rgb(0, 0, 0);
 
-    --font-arimo: "Arimo", sans-serif;
-    --font-arvo: "Arvo", serif;
-    --font-parisienne: "Parisienne", cursive;
+    --font-arimo: 'Arimo', sans-serif;
+    --font-arvo: 'Arvo', serif;
+    --font-parisienne: 'Parisienne', cursive;
 }
 
 @layer base {
@@ -80,14 +80,14 @@
 
 @layer utilities {
     .font-arimo {
-        font-family: "Arimo", sans-serif;
+        font-family: 'Arimo', sans-serif;
     }
 
     .font-parisienne {
-        font-family: "Parisienne", cursive;
+        font-family: 'Parisienne', cursive;
     }
 
     .font-arvo {
-        font-family: "Arvo", cursive;
+        font-family: 'Arvo', cursive;
     }
 }

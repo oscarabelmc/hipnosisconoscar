@@ -13,28 +13,31 @@ import Contact from '../components/Contact.astro';
     <section id="inicio" class="scroll-mt-24">
         <MainBanner />
     </section>
-    
+
     <!-- Introducción -->
     <Intro />
-    
+
     <!-- Especialidades / Servicios -->
     <WorkWithMe />
-    
+
     <!-- Quote con parallax -->
     <ParalaxQuote />
-    
+
     <!-- Nosotros / Sobre mí -->
     <section id="nosotros" class="scroll-mt-24">
         <SmallAboutMe />
     </section>
-    
+
     <!-- Video Motivacional -->
-    <section class="relative mt-30 min-h-[500px] flex items-center overflow-hidden" aria-label="Mensaje inspirador">
-        <video 
-            class="absolute inset-0 w-full h-full object-cover" 
-            autoplay 
-            loop 
-            muted 
+    <section
+        class="relative mt-30 min-h-125 flex items-center overflow-hidden"
+        aria-label="Mensaje inspirador"
+    >
+        <video
+            class="absolute inset-0 w-full h-full object-cover"
+            autoplay
+            loop
+            muted
             playsinline
             preload="auto"
             poster="/images/paralax.webp"
@@ -43,46 +46,66 @@ import Contact from '../components/Contact.astro';
             Tu navegador no soporta videos HTML5.
         </video>
         <div class="relative z-10 w-full px-4 py-20">
-            <h2 class="max-w-6xl leading-tight mx-auto text-center text-white text-3xl md:text-5xl lg:text-6xl font-arvo">
-                La verdad es que eres más fuerte de lo que crees. La verdad es que eres más fuerte de lo que piensas.
+            <h2
+                class="max-w-6xl leading-tight mx-auto text-center text-white text-3xl md:text-5xl lg:text-6xl font-arvo"
+            >
+                La verdad es que eres más fuerte de lo que crees. La verdad es que eres más fuerte
+                de lo que piensas.
             </h2>
         </div>
     </section>
-    
+
     <!-- Especialidades Grid -->
     <section class="max-w-6xl px-4 py-16 mx-auto mt-20" aria-labelledby="especialidades-heading">
-        <h2 id="especialidades-heading" class="text-center mb-12 text-3xl md:text-4xl">Áreas de Especialización</h2>
+        <h2 id="especialidades-heading" class="text-center mb-12 text-3xl md:text-4xl">
+            Áreas de Especialización
+        </h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
             <article class="text-center">
                 <figure class="mb-6">
-                    <img src="/images/ph.webp" alt="" class="w-48 h-48 mx-auto rounded-full object-cover" />
+                    <img
+                        src="/images/ph.webp"
+                        alt=""
+                        class="w-48 h-48 mx-auto rounded-full object-cover"
+                    />
                 </figure>
                 <h3 class="mb-4 text-xl">Ansiedad y depresión</h3>
                 <p class="text-lg leading-relaxed">
-                    Calma el caos interior, levanta el peso que has estado cargando y vuelve a conectarte con la motivación y la alegría.
+                    Calma el caos interior, levanta el peso que has estado cargando y vuelve a
+                    conectarte con la motivación y la alegría.
                 </p>
             </article>
             <article class="text-center">
                 <figure class="mb-6">
-                    <img src="/images/ph.webp" alt="" class="w-48 h-48 mx-auto rounded-full object-cover" />
+                    <img
+                        src="/images/ph.webp"
+                        alt=""
+                        class="w-48 h-48 mx-auto rounded-full object-cover"
+                    />
                 </figure>
                 <h3 class="mb-4 text-xl">Trauma y TEPT</h3>
                 <p class="text-lg leading-relaxed">
-                    Siéntete más seguro en tu cuerpo, más presente en tu vida y menos controlado por el pasado.
+                    Siéntete más seguro en tu cuerpo, más presente en tu vida y menos controlado por
+                    el pasado.
                 </p>
             </article>
             <article class="text-center">
                 <figure class="mb-6">
-                    <img src="/images/ph.webp" alt="" class="w-48 h-48 mx-auto rounded-full object-cover" />
+                    <img
+                        src="/images/ph.webp"
+                        alt=""
+                        class="w-48 h-48 mx-auto rounded-full object-cover"
+                    />
                 </figure>
                 <h3 class="mb-4 text-xl">Duelo y superación</h3>
                 <p class="text-lg leading-relaxed">
-                    Acompañamiento para procesar pérdidas y encontrar un camino hacia la sanación emocional.
+                    Acompañamiento para procesar pérdidas y encontrar un camino hacia la sanación
+                    emocional.
                 </p>
             </article>
         </div>
     </section>
-    
+
     <!-- Contacto -->
     <section id="contacto" class="scroll-mt-24">
         <Contact />
