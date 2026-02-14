@@ -7,7 +7,7 @@ export default {
             fontFamily: {
                 arvo: ['Arvo', 'Georgia', 'serif'],
                 arimo: ['Arimo', 'sans-serif'],
-                parisienne: ['Parisienne', 'cursive']
+                parisienne: ['Parisienne', 'cursive'],
             },
         },
     },

@@ -8,8 +8,8 @@ import tailwindcss from '@tailwindcss/vite';
 // https://astro.build/config
 export default defineConfig({
     i18n: {
-        locales: ["es", "en"],
-        defaultLocale: "es",
+        locales: ['es', 'en'],
+        defaultLocale: 'es',
     },
     server: {
         allowedHosts: ['hipnosisconoscar.com', 'zorro12.local'],
