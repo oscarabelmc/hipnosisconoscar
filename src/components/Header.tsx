@@ -28,6 +28,7 @@ export default function Header({ className = '' }: HeaderProps) {
     const navLinks = [
         { href: '#inicio', label: 'Inicio' },
         { href: '#nosotros', label: 'Nosotros' },
+        { href: '#especialidades', label: 'Especialidades' },
         { href: '#contacto', label: 'Contacto' },
     ];
 
