@@ -29,11 +29,27 @@ import Contact from '../components/Contact.astro';
             <SmallAboutMe />
         </section>
         
+        <!-- Video Motivacional -->
+        <section class="relative mt-30 min-h-[500px] flex items-center overflow-hidden" aria-label="Mensaje inspirador">
+            <video 
+                class="absolute inset-0 w-full h-full object-cover" 
+                autoplay 
+                loop 
+                muted 
+                playsinline
+                preload="auto"
+                poster="/images/paralax.webp"
+            >
                 <source src="/video/bg-video.mp4" type="video/mp4" />
+                Tu navegador no soporta videos HTML5.
             </video>
-            <h1 class="relative z-20 max-w-6xl leading-15 mx-auto text-center text-white text-4xl md:text-6xl font-arvo ">
-                La verdad es que eres más fuerte de lo que crees. La verdad es que eres más fuerte de lo que piensas.
-            </h1>
+            <div class="relative z-10 w-full px-4 py-20">
+                <h2 class="max-w-6xl leading-tight mx-auto text-center text-white text-3xl md:text-5xl lg:text-6xl font-arvo">
+                    La verdad es que eres más fuerte de lo que crees. La verdad es que eres más fuerte de lo que piensas.
+                </h2>
+            </div>
+        </section>
+        
         <!-- Especialidades Grid -->
         <section class="max-w-6xl px-4 py-16 mx-auto mt-20" aria-labelledby="especialidades-heading">
             <h2 id="especialidades-heading" class="text-center mb-12 text-3xl md:text-4xl">Áreas de Especialización</h2>
