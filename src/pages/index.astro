@@ -9,14 +9,26 @@ import Contact from '../components/Contact.astro';
 ---
 
 <Layout>
-    <div>
-        <MainBanner />
+    <main>
+        <!-- Inicio / Hero Section -->
+        <section id="inicio" class="scroll-mt-24">
+            <MainBanner />
+        </section>
+        
+        <!-- Introducción -->
         <Intro />
+        
+        <!-- Especialidades / Servicios -->
         <WorkWithMe />
+        
+        <!-- Quote con parallax -->
         <ParalaxQuote />
-        <SmallAboutMe />
-        <section class="relative mt-30 px-4 py-40 overflow-hidden">
-            <video class="absolute inset-0 w-full h-full object-cover z-0" autoplay loop muted>
+        
+        <!-- Nosotros / Sobre mí -->
+        <section id="nosotros" class="scroll-mt-24">
+            <SmallAboutMe />
+        </section>
+        
                 <source src="/video/bg-video.mp4" type="video/mp4" />
             </video>
             <h1 class="relative z-20 max-w-6xl leading-15 mx-auto text-center text-white text-4xl md:text-6xl font-arvo ">
