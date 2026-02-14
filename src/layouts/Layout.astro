@@ -44,9 +44,9 @@ const {
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
     </head>
-    <body class="antialiased">
+    <body class="bg-background text-foreground antialiased">
         <Header />
-        <main id="main-content">
+        <main id="main-content" class="min-h-screen">
             <slot />
         </main>
     </body>
