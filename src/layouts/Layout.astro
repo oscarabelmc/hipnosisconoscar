@@ -1,6 +1,7 @@
 ---
 import '@/styles/global.css';
 import Header from '../components/Header.tsx';
+import Footer from '../components/Footer.astro';
 
 interface Props {
     title?: string;
@@ -49,5 +50,6 @@ const {
         <main id="main-content" class="min-h-screen">
             <slot />
         </main>
+        <Footer />
     </body>
 </html>
