@@ -34,8 +34,8 @@ export default function Header({ className = '' }: HeaderProps) {
     return (
         <header role="banner" className={`fixed top-0 left-0 right-0 z-50 ${className}`}>
             <div
-                className={`absolute inset-0 h-30 transition-opacity duration-300 bg-secondary/80 backdrop-blur-sm ${
-                    isScrolled ? 'opacity-40' : 'opacity-0'
+                className={`absolute inset-0 h-30 transition-all duration-300 bg-secondary/80 ${
+                    isScrolled ? 'opacity-60 backdrop-blur-5xl' : 'opacity-0 backdrop-blur-none'
                 }`}
             />
 
