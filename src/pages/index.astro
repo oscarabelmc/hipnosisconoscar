@@ -5,6 +5,7 @@ import Intro from '../components/Intro.astro';
 import WorkWithMe from '../components/WorkWithMe.astro';
 import ParalaxQuote from '../components/ParalaxQuote.astro';
 import SmallAboutMe from '../components/SmallAboutMe.astro';
+import Contact from '../components/Contact.astro';
 ---
 
 <Layout>
@@ -54,35 +55,10 @@ import SmallAboutMe from '../components/SmallAboutMe.astro';
                 </article>
             </div>
         </section>
-        <section class="max-w-6xl px-4 py-8 mx-auto mt-30 flex gap-20 justify-between [&_article]:w-1/3 [&_img]:rounded-full [&_p]:mt-5">
-            <article>
-                <figure>
-                    <img src="/images/ph.webp" alt="Oscar Abel Mascareno Cervantes" class="w-full" />
-                </figure>
-                <h3>Ansiedad y depresión</h3>
-                <p>
-                Calma el caos interior, levanta el peso que has estado cargando y vuelve a conectarte con la motivación y la alegría.
-                </p>
-            </article>
-            <article>
-                <figure>
-                    <img src="/images/ph.webp" alt="Oscar Abel Mascareno Cervantes" class="w-full" />
-                </figure>
-                <h3>Trauma y TEPT</h3>
-                <p>
-                    Siéntete más seguro en tu cuerpo, más presente en tu vida y menos controlado por el pasado.
-                </p>
-            </article>
-            <article>
-                <figure>
-                    <img src="/images/ph.webp" alt="Oscar Abel Mascareno Cervantes" class="w-full" />
-                </figure>
-                <h3>Duelo y superación</h3>
-                <p>
-                hola
-                </p>
-            </article>
+        
+        <!-- Contacto -->
+        <section id="contacto" class="scroll-mt-24">
+            <Contact />
         </section>
-        <div class="h-screen">
-        </div>
+    </main>
 </Layout>
