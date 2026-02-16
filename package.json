@@ -24,6 +24,8 @@
         "test:ui": "vitest --ui",
         "test:run": "vitest run",
         "test:run:components": "vitest run __test__/components/"
+        "build": "bun --bun next build",
+        "start": "bun --bun next start"
     },
     "type": "module",
     "devDependencies": {
