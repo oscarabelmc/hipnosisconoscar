@@ -12,10 +12,10 @@
         "tailwindcss": "^4.1.18"
     },
     "scripts": {
-        "dev": "astro dev --host",
+        "dev": "bunx --bun astro dev --host",
         "build": "astro build",
-        "preview": "astro preview",
-        "astro": "astro",
+        "preview": "bunx --bun astro preview",
+        "astro": "bunx --bun astro",
         "format": "prettier --write .",
         "format:check": "prettier --check .",
         "lint": "eslint .",
