@@ -13,7 +13,7 @@
     },
     "scripts": {
         "dev": "bunx --bun astro dev --host",
-        "build": "bun --bun next build",
+        "build": "bun --bun astro build",
         "preview": "bunx --bun astro preview",
         "astro": "bunx --bun astro",
         "format": "prettier --write .",
