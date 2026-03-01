@@ -13,7 +13,7 @@
     },
     "scripts": {
         "dev": "bunx --bun astro dev --host",
-        "build": "astro build",
+        "build": "bun --bun next build",
         "preview": "bunx --bun astro preview",
         "astro": "bunx --bun astro",
         "format": "prettier --write .",
@@ -23,8 +23,7 @@
         "test": "vitest run",
         "test:ui": "vitest --ui",
         "test:run": "vitest run",
-        "test:run:components": "vitest run __test__/components/"
-        "build": "bun --bun next build",
+        "test:run:components": "vitest run __test__/components/",
         "start": "bun --bun next start"
     },
     "type": "module",
